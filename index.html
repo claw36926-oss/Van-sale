@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2017 Chrysler Pacifica Touring L For Sale | San Antonio | VisibleTX.com</title>
+<meta name="description" content="2017 Chrysler Pacifica Touring L for sale in San Antonio, TX. 3.6L V6 287HP, leather, power sliding doors, new tires/brakes/radiator. $7,699.">
+<meta property="og:title" content="2017 Chrysler Pacifica Touring L — $7,699">
+<meta property="og:description" content="Leather, power doors, new tires & brakes. San Antonio, TX.">
+<meta property="og:image" content="photos/1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --navy: #0a1628;
+    --orange: #ff6b2b;
+    --orange-hover: #e55a1f;
+    --orange-glow: rgba(255, 107, 43, 0.15);
+    --white: #ffffff;
+    --off-white: #fafbfc;
+    --light-gray: #f1f3f5;
+    --mid-gray: #6b7280;
+    --dark-gray: #1f2937;
+    --border: #e5e7eb;
+    --green: #22c55e;
+  }
+
+  .theme-fire   { --orange: #ff6b2b; --orange-hover: #e55a1f; --orange-glow: rgba(255,107,43,0.15); }
+  .theme-ocean  { --orange: #00b4d8; --orange-hover: #0096b7; --orange-glow: rgba(0,180,216,0.15); }
+  .theme-purple { --orange: #a855f7; --orange-hover: #9333ea; --orange-glow: rgba(168,85,247,0.15); }
+  .theme-gold   { --orange: #f59e0b; --orange-hover: #d97706; --orange-glow: rgba(245,158,11,0.15); }
+  .theme-green  { --orange: #22c55e; --orange-hover: #16a34a; --orange-glow: rgba(34,197,94,0.15); }
+  .theme-rose   { --orange: #f43f5e; --orange-hover: #e11d48; --orange-glow: rgba(244,63,94,0.15); }
+  .theme-teal   { --orange: #14b8a6; --orange-hover: #0d9488; --orange-glow: rgba(20,184,166,0.15); }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--dark-gray);
+    background: var(--white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ===== STICKY BAR ===== */
+  .sticky-bar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: var(--navy);
+    padding: 0.6rem 1rem;
+    display: flex; align-items: center; justify-content: center; gap: 0.6rem;
+    z-index: 100;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+  }
+  .sticky-bar .price-pill { font-size: 1.05rem; font-weight: 800; color: var(--orange); }
+  .sticky-bar a {
+    background: var(--orange); color: white; text-decoration: none;
+    font-weight: 700; font-size: 0.8rem; padding: 0.5rem 1.1rem;
+    border-radius: 50px; transition: all 0.2s;
+  }
+  .sticky-bar a:hover { background: var(--orange-hover); transform: scale(1.03); }
+  .sticky-bar .outline-btn {
+    background: transparent; border: 1.5px solid var(--orange); color: var(--orange);
+  }
+
+  /* ===== HERO WITH PHOTO ===== */
+  .hero {
+    position: relative;
+    min-height: 85vh;
+    display: flex; flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem 1.5rem 3rem;
+    text-align: center;
+    color: var(--white);
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: url('photos/5.jpg') center 40% / cover no-repeat;
+  }
+  .hero-bg::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(to top,
+      rgba(10,22,40,0.92) 0%,
+      rgba(10,22,40,0.55) 30%,
+      rgba(10,22,40,0.15) 55%,
+      rgba(10,22,40,0.05) 100%
+    );
+  }
+  .hero-content { position: relative; z-index: 2; }
+  .hero .badge {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 0.68rem; font-weight: 700;
+    padding: 0.3rem 0.9rem; border-radius: 50px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+  }
+  .hero h1 {
+    font-size: 2.6rem; font-weight: 900; line-height: 1.05;
+    margin-bottom: 0.4rem; letter-spacing: -0.03em;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  }
+  .hero h1 span { color: var(--orange); display: block; font-size: 1.3em; }
+  .hero .subtitle {
+    font-size: 0.95rem; opacity: 0.75; margin-bottom: 1.5rem; font-weight: 500;
+    letter-spacing: 0.03em;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.3);
+  }
+  .price-block {
+    display: inline-flex; flex-direction: column; align-items: center;
+    background: rgba(0,0,0,0.35);
+    border: 2px solid var(--orange);
+    border-radius: 16px; padding: 0.85rem 2.5rem;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3), inset 0 0 30px rgba(255,107,43,0.05);
+  }
+  .price-block small {
+    font-size: 0.6rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.15em; opacity: 0.7; color: var(--white);
+  }
+  .price-block .amount {
+    font-size: 3rem; font-weight: 900; color: var(--orange); line-height: 1;
+    text-shadow: 0 0 20px rgba(255,107,43,0.3);
+  }
+  .price-tomorrow {
+    margin-top: 0.6rem; font-size: 0.78rem; opacity: 0.5; font-style: italic;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+  }
+  .fortune-box {
+    margin: 1.25rem auto 0;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px; padding: 0.7rem 1.1rem;
+    max-width: 400px;
+    backdrop-filter: blur(8px);
+  }
+  .fortune-label { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.15em; opacity: 0.35; }
+  .fortune-text { font-size: 0.85rem; font-weight: 500; font-style: italic; line-height: 1.4; }
+  .fortune-vibe { font-size: 0.5rem; text-transform: uppercase; letter-spacing: 0.15em; opacity: 0.25; margin-top: 0.3rem; }
+
+  .hero-scroll {
+    margin-top: 1.5rem;
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em;
+    opacity: 0.4;
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ===== PHOTO CAROUSEL (mobile) + GRID (desktop) ===== */
+  .gallery { padding: 2rem 0 1rem; max-width: 900px; margin: 0 auto; }
+  .gallery-title { text-align: center; padding: 0 1rem; }
+
+  /* Mobile: swipe carousel */
+  .carousel {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    gap: 0.5rem; padding: 1rem; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar { display: none; }
+  .carousel img {
+    flex: 0 0 80%; scroll-snap-align: center;
+    border-radius: 12px; object-fit: cover; object-position: center center;
+    aspect-ratio: 16/10; cursor: pointer; transition: transform 0.2s;
+  }
+  .carousel img:hover { transform: scale(1.01); }
+  .carousel-dots {
+    display: flex; justify-content: center; gap: 6px; margin-top: 0.75rem;
+  }
+  .carousel-dots span {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--border); transition: all 0.3s;
+  }
+  .carousel-dots span.active { background: var(--orange); width: 24px; border-radius: 4px; }
+
+  /* Desktop: grid of thumbnails */
+  @media (min-width: 768px) {
+    .carousel {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.6rem; padding: 1rem 1.5rem;
+      overflow: visible;
+    }
+    .carousel img {
+      flex: none; width: 100%; aspect-ratio: 4/3;
+      border-radius: 10px; object-fit: cover; object-position: center center;
+    }
+    .carousel img:first-child {
+      grid-column: 1 / -1; aspect-ratio: 16/8;
+    }
+    .carousel img:hover { transform: scale(1.02); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+    .carousel-dots { display: none; }
+  }
+
+  .gallery-note {
+    text-align: center; font-size: 0.72rem; color: var(--mid-gray);
+    margin-top: 0.5rem; font-style: italic; padding: 0 1rem;
+  }
+
+  /* Lightbox */
+  .lightbox {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.95); z-index: 200;
+    align-items: center; justify-content: center;
+    cursor: zoom-out; padding: 1rem;
+  }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-width: 95%; max-height: 90vh; object-fit: contain; border-radius: 8px; }
+  .lightbox-close {
+    position: absolute; top: 1rem; right: 1.5rem; color: white;
+    font-size: 2rem; cursor: pointer; opacity: 0.7;
+    background: none; border: none; line-height: 1;
+  }
+  .lightbox-close:hover { opacity: 1; }
+  .lightbox-nav {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    color: white; font-size: 2.5rem; cursor: pointer; opacity: 0.5;
+    background: rgba(0,0,0,0.3); border: none; padding: 0.5rem 1rem;
+    border-radius: 8px; line-height: 1;
+  }
+  .lightbox-nav:hover { opacity: 1; }
+  .lightbox-prev { left: 0.75rem; }
+  .lightbox-next { right: 0.75rem; }
+
+  /* ===== SHARED ===== */
+  .section-title {
+    text-align: center; font-size: 1.35rem; font-weight: 800;
+    color: var(--navy); margin-bottom: 0.3rem; letter-spacing: -0.01em;
+  }
+  .section-sub {
+    text-align: center; color: var(--mid-gray); font-size: 0.85rem;
+    margin-bottom: 1.5rem; max-width: 480px; margin-left: auto; margin-right: auto;
+  }
+
+  /* ===== KBB COMPARISON ===== */
+  .kbb-bar {
+    background: linear-gradient(135deg, #0f1d32, #162a48);
+    padding: 2rem 1.5rem; text-align: center; color: white;
+  }
+  .kbb-compare {
+    display: flex; align-items: center; justify-content: center;
+    gap: 1.5rem; flex-wrap: wrap; max-width: 500px; margin: 0 auto;
+  }
+  .kbb-card {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px; padding: 1rem 1.5rem; min-width: 140px;
+  }
+  .kbb-card .kbb-label {
+    font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.5;
+  }
+  .kbb-card .kbb-price { font-size: 1.6rem; font-weight: 800; }
+  .kbb-card.theirs .kbb-price { color: rgba(255,255,255,0.6); text-decoration: line-through; }
+  .kbb-card.yours .kbb-price { color: var(--orange); }
+  .kbb-vs {
+    font-size: 0.9rem; font-weight: 700; opacity: 0.3; text-transform: uppercase;
+  }
+  .kbb-note {
+    margin-top: 1rem; font-size: 0.72rem; opacity: 0.4;
+  }
+
+  /* ===== SPECS ===== */
+  .specs { background: var(--light-gray); padding: 2.5rem 1.5rem; }
+  .spec-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem; max-width: 650px; margin: 0 auto;
+  }
+  .spec-card {
+    background: var(--white); border-radius: 12px; padding: 1.1rem 0.75rem;
+    text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .spec-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .spec-card .icon { font-size: 1.3rem; margin-bottom: 0.2rem; }
+  .spec-card .value { font-size: 1.05rem; font-weight: 800; color: var(--navy); line-height: 1.2; }
+  .spec-card .label {
+    font-size: 0.63rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--mid-gray); font-weight: 600; margin-top: 0.1rem;
+  }
+
+  /* ===== MAINTENANCE TIMELINE ===== */
+  .maintenance { padding: 2.5rem 1.5rem; max-width: 550px; margin: 0 auto; }
+  .timeline { position: relative; padding-left: 2rem; }
+  .timeline::before {
+    content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px;
+    width: 2px; background: var(--border);
+  }
+  .timeline-item {
+    position: relative; margin-bottom: 1.25rem; padding-left: 1rem;
+  }
+  .timeline-item::before {
+    content: '✓'; position: absolute; left: -2rem; top: 0;
+    width: 16px; height: 16px; background: var(--green); color: white;
+    border-radius: 50%; font-size: 0.55rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    z-index: 1;
+  }
+  .timeline-item .tl-title { font-weight: 700; font-size: 0.95rem; color: var(--navy); }
+  .timeline-item .tl-desc { font-size: 0.82rem; color: var(--mid-gray); }
+  .timeline-item .tl-tag {
+    display: inline-block; font-size: 0.6rem; font-weight: 600;
+    background: #dcfce7; color: #166534; padding: 0.15rem 0.5rem;
+    border-radius: 50px; text-transform: uppercase; letter-spacing: 0.05em;
+    margin-top: 0.2rem;
+  }
+
+  /* ===== HIGHLIGHTS ===== */
+  .highlights { padding: 2.5rem 1.5rem; max-width: 640px; margin: 0 auto; }
+  .highlight-item {
+    display: flex; align-items: flex-start; gap: 0.85rem;
+    margin-bottom: 0.75rem; padding: 1rem 1.15rem;
+    background: var(--off-white); border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .highlight-item:hover { border-color: var(--orange); box-shadow: 0 2px 12px var(--orange-glow); }
+  .highlight-icon {
+    flex-shrink: 0; width: 32px; height: 32px; font-size: 1.3rem;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .highlight-item p { font-size: 0.9rem; color: var(--dark-gray); line-height: 1.5; }
+  .highlight-item p strong { color: var(--navy); }
+
+  /* ===== TRUST / VIN ===== */
+  .trust {
+    background: var(--navy); color: var(--white);
+    padding: 2.5rem 1.5rem; text-align: center;
+  }
+  .trust .section-title { color: var(--white); }
+  .trust .section-sub { color: rgba(255,255,255,0.55); }
+  .vin-box {
+    display: inline-block; background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px; padding: 0.85rem 1.5rem; margin-bottom: 1rem;
+  }
+  .vin-label { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.15em; opacity: 0.4; }
+  .vin-number {
+    font-size: 1rem; font-weight: 700; font-family: 'Courier New', monospace;
+    letter-spacing: 0.08em; color: var(--orange); margin: 0.2rem 0; word-break: break-all;
+  }
+  .vin-link {
+    display: inline-block; margin-top: 0.4rem; color: var(--orange);
+    font-size: 0.8rem; font-weight: 600; text-decoration: none;
+    border-bottom: 1px dashed var(--orange);
+  }
+  .vin-link:hover { opacity: 0.8; }
+  .reviews-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem; max-width: 440px; margin: 1.25rem auto 0;
+  }
+  .review-card {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px; padding: 0.85rem 0.5rem;
+  }
+  .review-card .score { font-size: 1.3rem; font-weight: 800; color: var(--orange); }
+  .review-card .score small { font-size: 0.65rem; font-weight: 600; opacity: 0.5; color: var(--white); }
+  .review-card .source { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.4; margin-top: 0.1rem; }
+
+  /* ===== FAQ ===== */
+  .faq { padding: 2.5rem 1.5rem; max-width: 600px; margin: 0 auto; }
+  .faq-item {
+    border: 1px solid var(--border); border-radius: 10px;
+    margin-bottom: 0.5rem; overflow: hidden; transition: border-color 0.2s;
+  }
+  .faq-item:hover { border-color: #ccc; }
+  .faq-q {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 1.25rem; cursor: pointer; font-weight: 600;
+    font-size: 0.9rem; color: var(--navy); background: var(--off-white);
+    border: none; width: 100%; text-align: left; font-family: inherit;
+  }
+  .faq-q:hover { background: var(--light-gray); }
+  .faq-arrow {
+    font-size: 1.2rem; transition: transform 0.3s; color: var(--mid-gray); flex-shrink: 0;
+  }
+  .faq-item.open .faq-arrow { transform: rotate(180deg); }
+  .faq-a {
+    max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+    padding: 0 1.25rem; font-size: 0.88rem; color: var(--mid-gray); line-height: 1.6;
+  }
+  .faq-item.open .faq-a { max-height: 200px; padding: 0 1.25rem 1rem; }
+
+  /* ===== SHARE ===== */
+  .share-section { padding: 1.5rem; text-align: center; }
+  .share-btns { display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; }
+  .share-btn {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    padding: 0.5rem 1rem; border-radius: 50px;
+    font-size: 0.78rem; font-weight: 600;
+    text-decoration: none; cursor: pointer; transition: all 0.2s;
+    border: 1.5px solid var(--border); color: var(--dark-gray); background: var(--white);
+  }
+  .share-btn:hover { border-color: var(--orange); color: var(--orange); }
+  .share-btn.copied { border-color: var(--green); color: var(--green); }
+
+  /* ===== CTA ===== */
+  .cta-section {
+    background: linear-gradient(135deg, #0d1f3c, #162544);
+    padding: 3rem 1.5rem; text-align: center; color: var(--white);
+  }
+  .cta-section .section-title { color: var(--white); }
+  .cta-section .section-sub { color: rgba(255,255,255,0.6); }
+  .cta-btn {
+    display: inline-block; background: var(--orange); color: var(--white);
+    text-decoration: none; font-size: 1.05rem; font-weight: 700;
+    padding: 0.9rem 2.5rem; border-radius: 50px;
+    transition: all 0.2s; border: none; cursor: pointer;
+  }
+  .cta-btn:hover { background: var(--orange-hover); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(255,107,43,0.35); }
+  .contact-row {
+    margin-top: 1.25rem; display: flex; flex-direction: column;
+    align-items: center; gap: 0.4rem;
+  }
+  .contact-row a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+  .contact-row a:hover { color: var(--orange); }
+
+  /* ===== FORM ===== */
+  .form-section { padding: 2.5rem 1.5rem 4.5rem; max-width: 460px; margin: 0 auto; }
+  .form-section input, .form-section textarea {
+    width: 100%; padding: 0.8rem 1rem;
+    border: 2px solid var(--border); border-radius: 10px;
+    font-size: 0.9rem; font-family: inherit; margin-bottom: 0.55rem;
+    transition: border-color 0.2s, box-shadow 0.2s; background: var(--off-white);
+  }
+  .form-section input:focus, .form-section textarea:focus {
+    outline: none; border-color: var(--orange);
+    box-shadow: 0 0 0 3px var(--orange-glow); background: var(--white);
+  }
+  .form-section textarea { min-height: 80px; resize: vertical; }
+  .form-section button {
+    width: 100%; padding: 0.85rem; background: var(--orange);
+    color: var(--white); border: none; border-radius: 10px;
+    font-size: 0.92rem; font-weight: 700; cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+  }
+  .form-section button:hover { background: var(--orange-hover); }
+  .form-section button:active { transform: scale(0.98); }
+
+  /* ===== FOOTER ===== */
+  footer {
+    text-align: center; padding: 1.5rem 1.5rem 5rem;
+    background: var(--light-gray); font-size: 0.75rem; color: var(--mid-gray);
+  }
+  footer a { color: var(--orange); text-decoration: none; }
+  .footer-tease { margin-top: 0.35rem; font-size: 0.68rem; opacity: 0.5; }
+
+  /* ===== DESKTOP ===== */
+  @media (min-width: 768px) {
+    .hero { min-height: 90vh; padding: 4rem 2rem 4rem; }
+    .hero h1 { font-size: 3rem; }
+    .hero h1 span { font-size: 1.4em; }
+    .price-block .amount { font-size: 3.5rem; }
+    /* carousel handled above */
+    .spec-grid { grid-template-columns: repeat(4, 1fr); }
+    .sticky-bar { padding: 0.7rem 2rem; gap: 1rem; }
+    .sticky-bar .price-pill { font-size: 1.2rem; }
+    .sticky-bar a { font-size: 0.85rem; padding: 0.55rem 1.5rem; }
+    .kbb-compare { gap: 2rem; }
+  }
+
+  /* ===== ANIMATIONS ===== */
+  .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .slide-in { opacity: 0; transform: translateX(-15px); transition: opacity 0.4s ease, transform 0.4s ease; }
+  .slide-in.visible { opacity: 1; transform: translateX(0); }
+</style>
+</head>
+<body>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar">
+  <span class="price-pill">$7,699</span>
+  <a href="mailto:sell@visibletx.com">Email Me</a>
+  <a href="#contact-form" class="outline-btn">Send Info</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="badge">For Sale — San Antonio, TX</div>
+    <h1>2017 Chrysler<br><span>Pacifica</span></h1>
+    <p class="subtitle">Touring L · Silver · 3.6L V6 · 287 HP · Leather · Power Everything</p>
+    <div class="price-block">
+      <small>Today's Price</small>
+      <div class="amount" id="price-counter">$7,699</div>
+    </div>
+    <p class="price-tomorrow">"Today's price might not be tomorrow's price."</p>
+    <div class="fortune-box">
+      <div class="fortune-label">Today's Fortune</div>
+      <div class="fortune-text" id="fortune-text"></div>
+      <div class="fortune-vibe" id="fortune-vibe"></div>
+    </div>
+    <div class="hero-scroll">Scroll to explore ↓</div>
+  </div>
+</section>
+
+<!-- PHOTO CAROUSEL -->
+<section class="gallery fade-up">
+  <h2 class="section-title gallery-title">The Van</h2>
+  <p class="section-sub">Tap any photo for full size. Swipe to browse.</p>
+  <div class="carousel" id="carousel">
+    <img src="photos/1.jpg" alt="Passenger side profile" onclick="openLightbox(0)">
+    <img src="photos/2.jpg" alt="Front 3/4 driver side" onclick="openLightbox(1)">
+    <img src="photos/3.jpg" alt="Front angle — new tires" onclick="openLightbox(2)">
+    <img src="photos/4.jpg" alt="Front view on road" onclick="openLightbox(3)">
+    <img src="photos/5.jpg" alt="Front 3/4 with trees" onclick="openLightbox(4)">
+    <img src="photos/6.jpg" alt="Full driver side profile" onclick="openLightbox(5)">
+  </div>
+  <div class="carousel-dots" id="carousel-dots"></div>
+  <p class="gallery-note">Interior photos coming soon — van is getting detailed this week.</p>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="navLightbox(event,-1)">&#8249;</button>
+  <img id="lightbox-img" src="" alt="Full size">
+  <button class="lightbox-nav lightbox-next" onclick="navLightbox(event,1)">&#8250;</button>
+</div>
+
+
+<!-- SPECS -->
+<section class="specs fade-up">
+  <h2 class="section-title">Quick Specs</h2>
+  <p class="section-sub">Touring L trim — confirmed by VIN decode.</p>
+  <div class="spec-grid">
+    <div class="spec-card"><div class="icon">📅</div><div class="value">2017</div><div class="label">Year</div></div>
+    <div class="spec-card"><div class="icon">🛣️</div><div class="value">150K+</div><div class="label">Miles</div></div>
+    <div class="spec-card"><div class="icon">⛽</div><div class="value">3.6L V6</div><div class="label">287 HP</div></div>
+    <div class="spec-card"><div class="icon">🏷️</div><div class="value">Touring L</div><div class="label">Trim</div></div>
+    <div class="spec-card"><div class="icon">🎨</div><div class="value">Silver</div><div class="label">Color</div></div>
+    <div class="spec-card"><div class="icon">⚙️</div><div class="value">9-Speed</div><div class="label">Auto Trans</div></div>
+    <div class="spec-card"><div class="icon">🪑</div><div class="value">Leather</div><div class="label">Heated Seats</div></div>
+    <div class="spec-card"><div class="icon">🚪</div><div class="value">Power</div><div class="label">Sliding Doors</div></div>
+  </div>
+</section>
+
+
+<!-- HIGHLIGHTS -->
+<section class="highlights fade-up">
+  <h2 class="section-title">Why This Van?</h2>
+  <p class="section-sub">Not the base model. Touring L — fully loaded.</p>
+  <div class="highlight-item">
+    <div class="highlight-icon">🚪</div>
+    <p><strong>Power sliding doors + liftgate</strong> — Both sides. Hit the button, kids hop out, doors close behind them. School drop-off: ten seconds flat.</p>
+  </div>
+  <div class="highlight-item">
+    <div class="highlight-icon">💺</div>
+    <p><strong>Captain's chairs + deep trunk</strong> — Second-row captain's chairs, not a bench. Kids get their own space. Cargo area swallows groceries, strollers, sports gear.</p>
+  </div>
+  <div class="highlight-item">
+    <div class="highlight-icon">🔥</div>
+    <p><strong>Leather heated seats + Bluetooth</strong> — Heated fronts for cold mornings. Bluetooth audio and hands-free calling built in.</p>
+  </div>
+  <div class="highlight-item">
+    <div class="highlight-icon">🕶️</div>
+    <p><strong>Tinted windows</strong> — Ceramic tint on windshield, darkest legal on the rest. Keeps the Texas heat out.</p>
+  </div>
+  <div class="highlight-item">
+    <div class="highlight-icon">⚠️</div>
+    <p><strong>Full transparency</strong> — Occasional slow shift response. No codes, no warning lights. Come drive it and see for yourself.</p>
+  </div>
+</section>
+
+<!-- TRUST / VIN -->
+<section class="trust fade-up">
+  <h2 class="section-title">Don't Take My Word For It</h2>
+  <p class="section-sub">Look it up yourself. Nothing to hide.</p>
+  <div class="vin-box">
+    <div class="vin-label">VIN</div>
+    <div class="vin-number">2C4RC1BG5HR613313</div>
+    <a class="vin-link" href="https://vpic.nhtsa.dot.gov/decoder/Decoder/DecodeVin/2C4RC1BG5HR613313?format=json" target="_blank" rel="noopener">Verify on NHTSA.gov →</a>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card"><div class="score">8.6<small>/10</small></div><div class="source">U.S. News</div></div>
+    <div class="review-card"><div class="score">8.3<small>/10</small></div><div class="source">Car Connection</div></div>
+    <div class="review-card"><div class="score">4.5<small>/5</small></div><div class="source">Edmunds</div></div>
+  </div>
+</section>
+
+
+<!-- SHARE -->
+<section class="share-section fade-up">
+  <p style="font-size:0.75rem; color:var(--mid-gray); margin-bottom:0.5rem;">Know someone who needs a van?</p>
+  <div class="share-btns">
+    <button class="share-btn" onclick="copyLink(this)">📋 Copy Link</button>
+    <a class="share-btn" href="sms:?body=Check out this Pacifica for sale — visibletx.com">💬 Text a Friend</a>
+    <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://visibletx.com" target="_blank" rel="noopener">📘 Share</a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section fade-up">
+  <h2 class="section-title">Ready to See It?</h2>
+  <p class="section-sub">Text, call, or email. Located in San Antonio — will meet anywhere reasonable.</p>
+  <a href="mailto:sell@visibletx.com" class="cta-btn">Email Me About It</a>
+  <div class="contact-row">
+    <a href="mailto:sell@visibletx.com">sell@visibletx.com</a>
+    <a>San Antonio, TX</a>
+    <a>Cash or cashier's check · Clean title in hand</a>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section fade-up" id="contact-form">
+  <h2 class="section-title">Or Drop Your Info</h2>
+  <p class="section-sub">I'll get back to you within a few hours.</p>
+  <form id="contact-form-el">
+    <input type="text" id="cf-name" placeholder="Your name" required>
+    <input type="tel" id="cf-phone" placeholder="Phone number">
+    <input type="email" id="cf-email" placeholder="Email address" required>
+    <textarea id="cf-message" placeholder="Questions? Want to see it? Just say the word."></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 <a href="https://visibletx.com">VisibleTX.com</a> &middot; San Antonio, TX</p>
+  <p class="footer-tease">Something bigger is coming. Stay tuned.</p>
+</footer>
+
+<script>
+/* ===== FORTUNES ===== */
+var fortunes = [
+  "The one who hesitates pays more tomorrow.",
+  "A wise person sees a deal and moves. You're wise, right?",
+  "Good things come to those who act. Great things come to those who act today.",
+  "Somewhere out there, someone else is looking at this van right now.",
+  "You miss 100% of the vans you don't test drive.",
+  "Fortune favors the bold. And the bold drive Pacificas.",
+  "Today's move is tomorrow's story. Make it a good one.",
+  "The best time to buy this van was yesterday. The second best time is now.",
+  "A van in the driveway is worth two on Craigslist.",
+  "Trust the process. The process says buy the van.",
+  "Life is short. Your commute doesn't have to be uncomfortable.",
+  "They said minivans weren't cool. They were wrong.",
+  "Leather seats don't wait for anyone.",
+  "Some doors close. These ones slide open with a button.",
+  "The universe brought you to this page. Don't ignore the universe.",
+  "Your kids deserve captain's chairs. You know this.",
+  "Stop scrolling. Start driving.",
+  "This van has been everywhere and still wants to go more places. With you.",
+  "Every long road trip starts with one good van.",
+  "If not now, when? If not this van, which van?",
+  "The stars aligned. The price is right. The van is here.",
+  "Heated seats on a cold morning hit different. You already know.",
+  "Someone's getting this van today. Might as well be you.",
+  "New tires, new brakes, new chapter. Your move.",
+  "They don't make deals like this twice.",
+  "A smooth sea never made a skilled driver. But power sliding doors help.",
+  "Your sign to stop looking and start buying just appeared.",
+  "This van carried a family. It's ready to carry yours.",
+  "Opportunities and sliding doors — both close eventually.",
+  "You came here for a reason. The van is the reason."
+];
+
+var themes = ['theme-fire','theme-ocean','theme-purple','theme-gold','theme-green','theme-rose','theme-teal'];
+var vibes = ['Fire','Ocean','Purple Reign','Gold Rush','Money Green','Rose','Teal Wave'];
+
+var fi = Math.floor(Math.random() * fortunes.length);
+var ti = Math.floor(Math.random() * themes.length);
+document.getElementById('fortune-text').textContent = '"' + fortunes[fi] + '"';
+document.getElementById('fortune-vibe').textContent = "Today's vibe: " + vibes[ti];
+document.body.classList.add(themes[ti]);
+
+/* ===== LIGHTBOX ===== */
+var photos = ['photos/1.jpg','photos/2.jpg','photos/3.jpg','photos/4.jpg','photos/5.jpg','photos/6.jpg'];
+var currentPhoto = 0;
+
+function openLightbox(i) {
+  currentPhoto = i;
+  document.getElementById('lightbox-img').src = photos[i];
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(e) {
+  if (e && e.target && e.target.tagName === 'BUTTON') return;
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+function navLightbox(e, dir) {
+  e.stopPropagation();
+  currentPhoto = (currentPhoto + dir + photos.length) % photos.length;
+  document.getElementById('lightbox-img').src = photos[currentPhoto];
+}
+document.addEventListener('keydown', function(e) {
+  var lb = document.getElementById('lightbox');
+  if (!lb.classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') navLightbox(e, -1);
+  if (e.key === 'ArrowRight') navLightbox(e, 1);
+});
+
+/* ===== CAROUSEL DOTS ===== */
+var carousel = document.getElementById('carousel');
+var dotsContainer = document.getElementById('carousel-dots');
+var imgs = carousel.querySelectorAll('img');
+imgs.forEach(function(_, i) {
+  var dot = document.createElement('span');
+  if (i === 0) dot.classList.add('active');
+  dotsContainer.appendChild(dot);
+});
+carousel.addEventListener('scroll', function() {
+  var scrollLeft = carousel.scrollLeft;
+  var width = carousel.offsetWidth;
+  var activeIndex = Math.round(scrollLeft / (width * 0.85));
+  dotsContainer.querySelectorAll('span').forEach(function(dot, i) {
+    dot.classList.toggle('active', i === activeIndex);
+  });
+});
+
+/* ===== FAQ ACCORDION ===== */
+document.querySelectorAll('.faq-q').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = btn.parentElement;
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(el) { el.classList.remove('open'); });
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+/* ===== SHARE ===== */
+function copyLink(btn) {
+  var url = window.location.hostname === '' ? 'https://visibletx.com' : window.location.href;
+  navigator.clipboard.writeText(url).then(function() {
+    btn.classList.add('copied');
+    btn.innerHTML = '✓ Copied!';
+    setTimeout(function() { btn.classList.remove('copied'); btn.innerHTML = '📋 Copy Link'; }, 2000);
+  });
+}
+
+/* ===== FORM → EMAIL ===== */
+document.getElementById('contact-form-el').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var n = document.getElementById('cf-name').value;
+  var p = document.getElementById('cf-phone').value;
+  var em = document.getElementById('cf-email').value;
+  var m = document.getElementById('cf-message').value;
+  var body = 'Name: ' + n + '%0D%0APhone: ' + p + '%0D%0AEmail: ' + em + '%0D%0A%0D%0A' + encodeURIComponent(m);
+  window.location.href = 'mailto:sell@visibletx.com?subject=' + encodeURIComponent('Pacifica Inquiry from ' + n) + '&body=' + body;
+});
+
+/* ===== SCROLL ANIMATIONS ===== */
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up, .slide-in').forEach(function(el) { observer.observe(el); });
+</script>
+</body>
+</html>
