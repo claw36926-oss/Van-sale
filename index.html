@@ -165,9 +165,9 @@
   }
   .carousel::-webkit-scrollbar { display: none; }
   .carousel img {
-    flex: 0 0 80%; scroll-snap-align: center;
+    flex: 0 0 85%; scroll-snap-align: center;
     border-radius: 12px; object-fit: cover; object-position: center center;
-    aspect-ratio: 16/10; cursor: pointer; transition: transform 0.2s;
+    aspect-ratio: 16/10; max-height: 55vh; cursor: pointer; transition: transform 0.2s;
   }
   .carousel img:hover { transform: scale(1.01); }
   .carousel-dots {
@@ -475,7 +475,7 @@
 <!-- STICKY BAR -->
 <div class="sticky-bar">
   <span class="price-pill">$7,699</span>
-  <a href="mailto:sell@visibletx.com">Email Me</a>
+  <a href="mailto:sell@visibleetx.com">Email Me</a>
   <a href="#contact-form" class="outline-btn">Send Info</a>
 </div>
 
@@ -590,8 +590,8 @@
   <p style="font-size:0.75rem; color:var(--mid-gray); margin-bottom:0.5rem;">Know someone who needs a van?</p>
   <div class="share-btns">
     <button class="share-btn" onclick="copyLink(this)">📋 Copy Link</button>
-    <a class="share-btn" href="sms:?body=Check out this Pacifica for sale — visibletx.com">💬 Text a Friend</a>
-    <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://visibletx.com" target="_blank" rel="noopener">📘 Share</a>
+    <a class="share-btn" href="sms:?body=Check out this Pacifica for sale — visibleetx.com">💬 Text a Friend</a>
+    <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://visibleetx.com" target="_blank" rel="noopener">📘 Share</a>
   </div>
 </section>
 
@@ -599,9 +599,9 @@
 <section class="cta-section fade-up">
   <h2 class="section-title">Ready to See It?</h2>
   <p class="section-sub">Text, call, or email. Located in San Antonio — will meet anywhere reasonable.</p>
-  <a href="mailto:sell@visibletx.com" class="cta-btn">Email Me About It</a>
+  <a href="mailto:sell@visibleetx.com" class="cta-btn">Email Me About It</a>
   <div class="contact-row">
-    <a href="mailto:sell@visibletx.com">sell@visibletx.com</a>
+    <a href="mailto:sell@visibleetx.com">sell@visibleetx.com</a>
     <a>San Antonio, TX</a>
     <a>Cash or cashier's check · Clean title in hand</a>
   </div>
@@ -622,7 +622,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>&copy; 2026 <a href="https://visibletx.com">VisibleTX.com</a> &middot; San Antonio, TX</p>
+  <p>&copy; 2026 <a href="https://visibleetx.com">VisibleTX.com</a> &middot; San Antonio, TX</p>
   <p class="footer-tease">Something bigger is coming. Stay tuned.</p>
 </footer>
 
@@ -728,7 +728,7 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
 
 /* ===== SHARE ===== */
 function copyLink(btn) {
-  var url = window.location.hostname === '' ? 'https://visibletx.com' : window.location.href;
+  var url = window.location.hostname === '' ? 'https://visibleetx.com' : window.location.href;
   navigator.clipboard.writeText(url).then(function() {
     btn.classList.add('copied');
     btn.innerHTML = '✓ Copied!';
@@ -744,7 +744,7 @@ document.getElementById('contact-form-el').addEventListener('submit', function(e
   var em = document.getElementById('cf-email').value;
   var m = document.getElementById('cf-message').value;
   var body = 'Name: ' + n + '%0D%0APhone: ' + p + '%0D%0AEmail: ' + em + '%0D%0A%0D%0A' + encodeURIComponent(m);
-  window.location.href = 'mailto:sell@visibletx.com?subject=' + encodeURIComponent('Pacifica Inquiry from ' + n) + '&body=' + body;
+  window.location.href = 'mailto:sell@visibleetx.com?subject=' + encodeURIComponent('Pacifica Inquiry from ' + n) + '&body=' + body;
 });
 
 /* ===== SCROLL ANIMATIONS ===== */
