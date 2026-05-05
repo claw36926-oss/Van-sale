@@ -475,7 +475,7 @@
 <!-- STICKY BAR -->
 <div class="sticky-bar">
   <span class="price-pill">$7,699</span>
-  <a href="mailto:sell@visibleetx.com">Email Me</a>
+  <a href="mailto:visibleetx@gmail.com">Email Me</a>
   <a href="#contact-form" class="outline-btn">Send Info</a>
 </div>
 
@@ -599,9 +599,9 @@
 <section class="cta-section fade-up">
   <h2 class="section-title">Ready to See It?</h2>
   <p class="section-sub">Text, call, or email. Located in San Antonio — will meet anywhere reasonable.</p>
-  <a href="mailto:sell@visibleetx.com" class="cta-btn">Email Me About It</a>
+  <a href="mailto:visibleetx@gmail.com" class="cta-btn">Email Me About It</a>
   <div class="contact-row">
-    <a href="mailto:sell@visibleetx.com">sell@visibleetx.com</a>
+    <a href="mailto:visibleetx@gmail.com">visibleetx@gmail.com</a>
     <a>San Antonio, TX</a>
     <a>Cash or cashier's check · Clean title in hand</a>
   </div>
@@ -611,11 +611,11 @@
 <section class="form-section fade-up" id="contact-form">
   <h2 class="section-title">Or Drop Your Info</h2>
   <p class="section-sub">I'll get back to you within a few hours.</p>
-  <form id="contact-form-el">
-    <input type="text" id="cf-name" placeholder="Your name" required>
-    <input type="tel" id="cf-phone" placeholder="Phone number">
-    <input type="email" id="cf-email" placeholder="Email address" required>
-    <textarea id="cf-message" placeholder="Questions? Want to see it? Just say the word."></textarea>
+  <form id="contact-form-el" action="https://formspree.io/f/xaqvogny" method="POST">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="tel" name="phone" placeholder="Phone number">
+    <input type="email" name="email" placeholder="Email address" required>
+    <textarea name="message" placeholder="Questions? Want to see it? Just say the word."></textarea>
     <button type="submit">Send Message</button>
   </form>
 </section>
@@ -736,15 +736,33 @@ function copyLink(btn) {
   });
 }
 
-/* ===== FORM → EMAIL ===== */
+/* ===== FORM → FORMSPREE ===== */
 document.getElementById('contact-form-el').addEventListener('submit', function(e) {
   e.preventDefault();
-  var n = document.getElementById('cf-name').value;
-  var p = document.getElementById('cf-phone').value;
-  var em = document.getElementById('cf-email').value;
-  var m = document.getElementById('cf-message').value;
-  var body = 'Name: ' + n + '%0D%0APhone: ' + p + '%0D%0AEmail: ' + em + '%0D%0A%0D%0A' + encodeURIComponent(m);
-  window.location.href = 'mailto:sell@visibleetx.com?subject=' + encodeURIComponent('Pacifica Inquiry from ' + n) + '&body=' + body;
+  var form = e.target;
+  var btn = form.querySelector('button');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(function(r) {
+    if (r.ok) {
+      form.reset();
+      btn.textContent = 'Sent! I\'ll be in touch.';
+      btn.style.background = '#22c55e';
+      setTimeout(function() { btn.textContent = 'Send Message'; btn.style.background = ''; btn.disabled = false; }, 4000);
+    } else {
+      btn.textContent = 'Error — try again';
+      btn.style.background = '#ef4444';
+      btn.disabled = false;
+    }
+  }).catch(function() {
+    btn.textContent = 'Error — try again';
+    btn.style.background = '#ef4444';
+    btn.disabled = false;
+  });
 });
 
 /* ===== SCROLL ANIMATIONS ===== */
